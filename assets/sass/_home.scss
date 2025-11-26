@@ -115,6 +115,7 @@ section.main-container {
 
   .right-side {
     background-color: #15181b;
+    @include flex(column, nowrap, center, center);
     padding: 40px;
     width: 30%;
     min-height: 570px;
@@ -240,11 +241,12 @@ section.projects {
     @media screen and (max-width: $break-large) {
       flex-direction: column;
     }
+    box-shadow: 0px 5px 30px -15px  $slate;
     padding: 0 50px;
-    background-color: #292c35;
+    background-color: #15181b;
     border-radius: 35px;
     overflow: hidden;
-    margin-top: 200px;
+    margin: 100px 0 100px;
     width: 100%;
     color: $lightest-slate;
     &:nth-child(odd) {
@@ -267,7 +269,6 @@ section.projects {
       min-height: 500px;
       img{
         border-radius: 10px;
-        border: 2px $light-gray solid;
       }
       @media screen and (max-width: $break-large) {
         min-height: 100px;
